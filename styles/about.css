@@ -1,0 +1,180 @@
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  background-image: url(assets/pexels-rahulp9800-1083633.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  padding: 5px;
+  margin: 10px 10px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 12px;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  border: 2px solid #ebb7b7;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #ccdfce;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  text-align: justify;
+}
+
+ul,
+ol {
+  margin: 15px 0;
+  padding-left: 25px;
+}
+
+ul li {
+  color: #25dffc;
+  margin-bottom: 5px;
+}
+
+ul li:hover {
+  color: #ed2020;
+  cursor: pointer;
+}
+
+ol li {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+/*Table Styling*/
+table.favorite-books {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #ffffff;
+  color: black;
+}
+
+table.favorite-books thead {
+  background-color: #0083b0;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table.favorite-books tbody tr:nth-child(odd) {
+  background-color: #6fd1f2; /* light blue for the odds */
+}
+
+table.favorite-books tbody tr:nth-child(even) {
+  background-color: #44afec; /* slightly darker bg color for the unique row*/
+}
+
+table.favorite-books th,
+table.favorite-books td {
+  padding: 12px;
+}
+
+/*Internal Links styling*/
+a.internal-link:link {
+  color: #0083b0;
+}
+a.internal-link:visited {
+  color: #7f0050;
+}
+a.internal-link:hover {
+  color: #0cd3a8;
+  text-decoration: underline;
+}
+a.internal-link:active {
+  color: #ab11f8;
+}
+
+/* External Links styling */
+a.external-link:link {
+  color: #0055a0;
+}
+a.external-link:visited {
+  color: #55007f;
+}
+a.external-link:hover {
+  color: #0cd3a8;
+  text-decoration: underline;
+}
+a.external-link:active {
+  color: #ab11f8;
+}
+
+/* Button styling*/
+button.more,
+button.read-more {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #25dffc;
+  color: black;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button.more::after,
+button.read-more::after {
+  content: "👇";
+  margin-left: 5px;
+}
+
+button.more:hover,
+button.read-more:hover {
+  background-color: #00b4db;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+footer {
+  background: gray;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  p,
+  li {
+    font-size: 16px;
+  }
+  table.favorite-books {
+    width: 100%;
+    font-size: 14px;
+  }
+}

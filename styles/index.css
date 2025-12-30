@@ -1,0 +1,83 @@
+* {
+  font-family: "Arial", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  padding: 20px;
+  position: sticky;
+}
+
+.header nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  background-image: url(/styles/assets/pexels-pixabay-415078.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  text-align: center;
+  color: rgb(18, 6, 76);
+}
+
+.cards {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  border: 4px dotted #580707;
+  padding: 30px;
+  margin: 20px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.card:hover {
+  animation: bounce 0.8s ease;
+}
+
+footer {
+  background: gray;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
